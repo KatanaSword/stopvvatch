@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+
+/* || Variable || */
+
+:root {
+  --COLOR-SOCIAL: #fff;
+  --COLOR-SOCIAL-HOVER: #000;
+  --COLOR-BOX-SHADOW: #808080;
+  --COLOR-FONT: #fff;
+  --BACKGROUND-COLOR-START: #17a69d;
+  --BACKGROUND-COLOR-TIMER: #fff;
+  --BACKGROUND-COLOR-HEADER-FOOTER: #235789;
+  --BACKGROUND-COLOR-BODY: #d9afd9;
+  --BACKGROUND-COLOR-LINEAR-GRADIENT: #d9afd9, #97d9e1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style Body */
+
+body {
+  background-color: var();
+  background: linear-gradient(
+      to bottom right,
+      var(--BACKGROUND-COLOR-LINEAR-GRADIENT)
+    )
+    no-repeat center center;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+/* Style Header */
+
+header {
+  font-family: "Abril Fatface", serif;
+  text-align: center;
+  padding: 0.5rem 0;
+  font-size: 1.1rem;
+  box-shadow: 0 1px 2px var(--COLOR-BOX-SHADOW);
+  color: var(--COLOR-FONT);
+  background-color: var(--BACKGROUND-COLOR-HEADER-FOOTER);
+}
+
+/* Style Main */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.container-timer {
+  font-size: 1.5rem;
+  letter-spacing: 3px;
+  padding: 1rem 3.4rem;
+  border-radius: 40px;
+  background-color: var(--BACKGROUND-COLOR-TIMER);
+}
+
+.container-btn {
+  display: flex;
+  gap: 2rem;
+}
+
+#reset-btn,
+#startstopresume-btn {
+  height: 2.7rem;
+  width: 7rem;
+  border: none;
+  font-size: 1.1rem;
+}
+
+#startstopresume-btn {
+  background-color: var(--BACKGROUND-COLOR-START);
+  color: var(--COLOR-FONT);
+}
+
+/* Style Footer */
+
+footer {
+  height: 5rem;
+  padding: 0 1rem;
+  background-color: var(--BACKGROUND-COLOR-HEADER-FOOTER);
+  color: var(--COLOR-FONT);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copyright {
+  opacity: 0.7;
+}
+
+.social-link {
+  display: flex;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.social {
+  font-size: 1.5rem;
+  color: var(--COLOR-SOCIAL);
+}
+
+.social:hover {
+  color: var(--COLOR-SOCIAL-HOVER);
+}
